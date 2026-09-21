@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "generate:completions": "node scripts/generate-cpg-completions.mjs",
-    "dev": "vite dev",
-    "build": "node scripts/generate-cpg-completions.mjs && vite build",
+    "dev": "node init && vite dev",
+    "build": "node init && node scripts/generate-cpg-completions.mjs && vite build",
     "preview": "vite preview",
     "prepare": "node scripts/generate-cpg-completions.mjs && (svelte-kit sync || echo '')",
     "check": "node scripts/generate-cpg-completions.mjs && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",

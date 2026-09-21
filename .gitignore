@@ -27,3 +27,5 @@ LibrariesTest.kt
 findings.json
 application.conf
 
+config.bat
+node_modules
